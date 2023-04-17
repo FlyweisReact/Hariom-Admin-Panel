@@ -109,7 +109,7 @@ const Kundli = () => {
                 />
               </td>
               <td>
-                <i className="fa-solid fa-trash" onClick={() => toast.success("Kundli Deleted Successfully")} />
+                <i className="fa-solid fa-trash" onClick={() => toast.success("Kundli ")} />
               </td>
             </tr>
           </tbody>

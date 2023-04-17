@@ -1,12 +1,11 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
-import { toast } from 'react-toastify'
 import HOC from '../layout/HOC'
 
 const AdminUsers = () => {
   return (
    <>
-    <p style={{fontSize : '18px', textTransform : 'uppercase' , fontWeight : 'bold'}} >All Users</p>
+    <p style={{fontSize : '18px', textTransform : 'uppercase' }} >All Users</p>
 
     <div style={{width  : '100%' , overflow : 'auto'}}>
       <Table striped bordered hover >
@@ -23,6 +22,7 @@ const AdminUsers = () => {
             <th>Birth City</th>
             <th>Wallet</th>
             <th>Action</th>
+
           </tr>
         </thead>
         <tbody>
@@ -38,7 +38,7 @@ const AdminUsers = () => {
             <td>Demo</td>
             <td>Demo</td>
             <td>
-            <i className='fa-solid fa-trash' onClick={() => toast('User Deleted Successfully')} />
+            <i className='fa-solid fa-trash' />
             </td>
           </tr>
         </tbody>

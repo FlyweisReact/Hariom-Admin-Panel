@@ -29,54 +29,12 @@ const Horoscope = () => {
         <Modal.Body>
           {edit ? (
             <>
-              <p className="View">
-                {" "}
-                <strong>Professional</strong> : In publishing and graphic
-                design, Lorem ipsum is a placeholder text commonly used to
-                demonstrate the visual form of a document or a typeface without
-                relying on meaningful content. Lorem ipsum may be used as a
-                placeholder before final copy is available{" "}
-              </p>
-              <p className="View">
-                {" "}
-                <strong>Emotions</strong> : In publishing and graphic design,
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content. Lorem ipsum may be used as a placeholder
-                before final copy is available{" "}
-              </p>
-              <p className="View">
-                {" "}
-                <strong>Health</strong> : In publishing and graphic design,
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content. Lorem ipsum may be used as a placeholder
-                before final copy is available{" "}
-              </p>
-              <p className="View">
-                {" "}
-                <strong>Finance</strong> : In publishing and graphic design,
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content. Lorem ipsum may be used as a placeholder
-                before final copy is available{" "}
-              </p>
-              <p className="View">
-                {" "}
-                <strong>Love</strong> : In publishing and graphic design, Lorem
-                ipsum is a placeholder text commonly used to demonstrate the
-                visual form of a document or a typeface without relying on
-                meaningful content. Lorem ipsum may be used as a placeholder
-                before final copy is available{" "}
-              </p>
-              <p className="View">
-                {" "}
-                <strong>Family</strong> : In publishing and graphic design,
-                Lorem ipsum is a placeholder text commonly used to demonstrate
-                the visual form of a document or a typeface without relying on
-                meaningful content. Lorem ipsum may be used as a placeholder
-                before final copy is available{" "}
-              </p>
+              <p className="View"> <strong>Professional</strong> : In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available  </p>
+              <p className="View"> <strong>Emotions</strong> : In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available  </p>
+              <p className="View"> <strong>Health</strong> : In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available  </p>
+              <p className="View"> <strong>Finance</strong> : In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available  </p>
+              <p className="View"> <strong>Love</strong> : Demo </p>
+              <p className="View"> <strong>Family</strong> : Demo </p>
             </>
           ) : (
             <Form>
@@ -131,7 +89,7 @@ const Horoscope = () => {
           </span>
           <button
             onClick={() => {
-              setEdit(false);
+              setEdit(false)
               setModalShow(true);
             }}
             className="md:py-2 px-3 md:px-4 py-1 rounded-sm bg-[rgb(241,146,46)] text-white tracking-wider"
@@ -169,13 +127,10 @@ const Horoscope = () => {
                       toast.success("Horoscope Deleted Successfully")
                     }
                   />
-                  <i
-                    className="fa-solid fa-eye"
-                    onClick={() => {
-                      setEdit(true);
-                      setModalShow(true);
-                    }}
-                  />
+                  <i className="fa-solid fa-eye" onClick={() => {
+                    setEdit(true)
+                    setModalShow(true)
+                  } } />
                 </span>
               </td>
             </tr>

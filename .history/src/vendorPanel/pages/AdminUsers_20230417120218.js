@@ -38,7 +38,7 @@ const AdminUsers = () => {
             <td>Demo</td>
             <td>Demo</td>
             <td>
-            <i className='fa-solid fa-trash' onClick={() => toast('User Deleted Successfully')} />
+            <i className='fa-solid fa-trash' onClick={() => toast.info('User Deleted Successfully')} />
             </td>
           </tr>
         </tbody>

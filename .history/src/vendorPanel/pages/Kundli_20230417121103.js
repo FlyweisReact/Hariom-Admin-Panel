@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Table, Modal, Form, Button } from "react-bootstrap";
-import { toast } from "react-toastify";
 import HOC from "../layout/HOC";
 
 const Kundli = () => {
@@ -102,14 +101,14 @@ const Kundli = () => {
                 <img
                   src="https://www.astrosage.com/kundli/images/kundali.jpg"
                   alt=""
-                  style={{ width: "100px" , cursor : 'pointer' }}
+                  style={{ width: "100px" }}
                   onClick={() => {
                     setOpen(true);
                   }}
                 />
               </td>
               <td>
-                <i className="fa-solid fa-trash" onClick={() => toast.success("Kundli Deleted Successfully")} />
+                <i className="fa-solid fa-trash" />
               </td>
             </tr>
           </tbody>

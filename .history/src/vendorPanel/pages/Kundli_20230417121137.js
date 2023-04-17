@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Table, Modal, Form, Button } from "react-bootstrap";
-import { toast } from "react-toastify";
 import HOC from "../layout/HOC";
 
 const Kundli = () => {
@@ -109,7 +108,7 @@ const Kundli = () => {
                 />
               </td>
               <td>
-                <i className="fa-solid fa-trash" onClick={() => toast.success("Kundli Deleted Successfully")} />
+                <i className="fa-solid fa-trash" onClick={() =>} />
               </td>
             </tr>
           </tbody>

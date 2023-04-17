@@ -1,14 +1,13 @@
 /** @format */
 
 import React, { useState } from "react";
-import { Table, Modal, Form, Button } from "react-bootstrap";
-import { toast } from "react-toastify";
+import {  Table, Modal, Form, Button } from "react-bootstrap";
 import HOC from "../layout/HOC";
 
 const Kundli = () => {
   const [modalShow, setModalShow] = React.useState(false);
-
-  const [open, setOpen] = useState(false);
+ 
+  const [ open , setOpen ] = useState(false)
 
   function MyVerticallyCenteredModal(props) {
     return (
@@ -24,18 +23,24 @@ const Kundli = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Select aria-label="Default select example" className="mb-3">
+          <Form >
+            <Form.Group className="mb-3">
+              <Form.Label>Kundli</Form.Label>
+              <Form.Control
+                type="file"
+                required
+              />
+            </Form.Group>
+        
+            <Form.Select
+              aria-label="Default select example"
+              className='mb-3'
+            >
               <option>Open to select user</option>
               <option value="">User</option>
               <option value="">User2</option>
             </Form.Select>
-
-            <Form.Group className="mb-3">
-              <Form.Label>Kundli</Form.Label>
-              <Form.Control type="file" required />
-            </Form.Group>
-
+      
             <Button variant="outline-success" type="submit">
               Submit
             </Button>
@@ -52,13 +57,12 @@ const Kundli = () => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton style={{ borderBottom: "0" }}></Modal.Header>
+        <Modal.Header closeButton style={{borderBottom : '0'}}>
+        </Modal.Header>
         <Modal.Body>
-          <img
-            src={"https://www.astrosage.com/kundli/images/kundali.jpg"}
-            alt=""
-            style={{ width: "100%" }}
-          />
+
+        <img src={'https://www.astrosage.com/kundli/images/kundali.jpg'} alt='' style={{width : '100%'}} />
+         
         </Modal.Body>
       </Modal>
     );
@@ -87,33 +91,29 @@ const Kundli = () => {
           </button>
         </div>
 
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>User</th>
-              <th>Image</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
+     
+          <Table  striped bordered hover>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Image</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody >
             <tr>
               <td>User</td>
               <td>
-                <img
-                  src="https://www.astrosage.com/kundli/images/kundali.jpg"
-                  alt=""
-                  style={{ width: "100px" , cursor : 'pointer' }}
-                  onClick={() => {
-                    setOpen(true);
-                  }}
-                />
+                <img src='https://www.astrosage.com/kundli/images/kundali.jpg' alt='' style={{width : '100px'}} onClick={() => {
+             
+                  setOpen(true)}} />
               </td>
               <td>
-                <i className="fa-solid fa-trash" onClick={() => toast.success("Kundli Deleted Successfully")} />
+                <i className="fa-solid fa-trash" />
               </td>
             </tr>
-          </tbody>
-        </Table>
+            </tbody>
+          </Table>
       </section>
     </>
   );

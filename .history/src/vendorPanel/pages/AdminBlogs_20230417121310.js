@@ -6,7 +6,6 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-
 const AdminBlogs = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -148,7 +147,7 @@ const AdminBlogs = () => {
                 </p>
               </div>
               <div>
-                <Button variant="outline-danger" style={{ width: "100%" }}>
+                <Button variant="outline-danger" style={{ width: "100%" }} onCk >
                   Delete
                 </Button>
               </div>
