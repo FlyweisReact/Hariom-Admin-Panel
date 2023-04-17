@@ -18,11 +18,6 @@ const Sidebar = ({ hamb, setHamb }) => {
     },
     {
       icon: <MdDashboardCustomize className="text-xl mr-3 rounded-full " />,
-      link: "/E-Commerce/VendorList",
-      name: "Vendors",
-    },
-    {
-      icon: <MdDashboardCustomize className="text-xl mr-3 rounded-full " />,
       link: "/E-Commerce/Category",
       name: "Category",
     },

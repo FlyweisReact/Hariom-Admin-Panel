@@ -28,7 +28,6 @@ import EVendorLogin from './E-CommerceVendor/forms/EVendorLogin'
 import EVDashboard from "./E-CommerceVendor/pages/EVDashboard";
 import EVCategory from "./E-CommerceVendor/pages/EVCategory";
 import EVProduct from "./E-CommerceVendor/pages/EVProduct";
-import EVendorList from "./E-CommerceAdmin/pages/EVendorList";
 function App() {
   return (
     <>
@@ -60,7 +59,7 @@ function App() {
           <Route path="/E-Commerce/dashboard" element={<Dashboard />} />
           <Route path="/E-Commerce/Category" element={<ECategory />} />
           <Route path="/E-Commerce/Product" element={<EProduct />} />
-          <Route path="/E-Commerce/VendorList" element={<EVendorList />} />
+          <Route path="/E-Commerce/Vend" element={<EProduct />} />
         {/* ------------------------------- */}
 
 
